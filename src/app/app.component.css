@@ -1,0 +1,16 @@
+#sidebar{
+    height: 100vh;
+    padding-top: 80px;
+    background-color: ghostwhite;
+    position: fixed;
+}
+#dashboard{
+    margin-top: 60px;
+
+
+}
+.navbar{
+    background-color: gray;
+    box-shadow: grey;
+
+}

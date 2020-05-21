@@ -1,8 +1,17 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { SectionSalesComponent } from '../app/Sections/section-sales/section-sales.component';
+import { SectionOrdersComponent } from '../app/Sections/section-orders/section-orders.component';
+import { SectionHealthComponent } from '../app/Sections/section-health/section-health.component';
 
 
-const routes: Routes = [];
+const routes: Routes = [
+    {path: 'sales', component: SectionSalesComponent},
+    {path: 'orders', component: SectionOrdersComponent},
+    {path: 'health', component: SectionHealthComponent},
+
+    {path: '', redirectTo: '/sales', pathMatch: 'full'}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

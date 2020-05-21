@@ -1,0 +1,16 @@
+.logo{
+    color: honeydew;
+    font-weight: Bold;
+    font-size: 1.4em;
+}
+.logo-left{
+    background-color: orangered;
+    padding: 3px;
+    border-radius: 4px;
+
+}
+.logo-right{
+    padding: 3px;
+    margin-left: -5px;
+
+}

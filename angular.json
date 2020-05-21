@@ -24,9 +24,16 @@
               "src/assets"
             ],
             "styles": [
+              "../BI/node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "../BI/node_modules/jquery/dist/jquery.min.js",
+              "../BI/node_modules/popper.js/dist/umd/popper.min.js",
+              "../BI/node_modules/chart.js/dist/chart.min.js",
+              "../BI/node_modules/bootstrap/dist/js/bootstrap.min.js"
+
+            ]
           },
           "configurations": {
             "production": {
