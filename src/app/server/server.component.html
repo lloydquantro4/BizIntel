@@ -6,5 +6,5 @@
         {{serverInput.isOnline}}
     
     </div>
-    <button class="btn btn-default action">Toogle Status</button>
+    <button (click)= "toggleStatus(serverInput.isOnline)"class="btn btn-default action">{{buttonText}}</button>
 </div>
