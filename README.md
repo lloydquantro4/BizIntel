@@ -1,5 +1,5 @@
 # BI
-Dashboard frontend application consuming an external API. 
+BizIntel is a dashboard frontend application consuming an external API. 
 
 
 #Runnning
