@@ -1,8 +1,9 @@
 #sidebar{
     height: 100vh;
-    padding-top: 80px;
-    background-color: ghostwhite;
+    padding-top: 60px;
+    background-color: rgb(203, 203, 221);
     position: fixed;
+    font-weight: 600;
 }
 #dashboard{
     margin-top: 60px;
