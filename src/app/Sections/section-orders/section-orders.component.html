@@ -1,5 +1,5 @@
 <div class="section-container">
-  <h2>Latest Orders
+  <h2>Latest Orders</h2>
     <div *ngIf="loading; else ShowTable">
       Please be patient while loading
     </div>
@@ -12,7 +12,6 @@
             <th>Amount</th>
             <th>Order Placed</th>
             <th>Order Fulfilled</th>
-
           </tr>
         </thead>
         <tbody>
@@ -22,14 +21,10 @@
             <td>{{ order.total }}</td>
             <td>{{ order.orderPlaced | date: 'short' }}</td>
             <td>{{ order.orderCompleted | date: 'short' }}</td>
-
           </tr>
         </tbody>
       </table>
     </ng-template>
-  </h2>
-
-
   <app-pagination (prevPage)="goToPrev()"
   (nextPage)="goToNext()"
   (goPage) = "goToPage($event)"
@@ -39,6 +34,5 @@
   ></app-pagination>
   Pages: {{total}}
   {{page}}
-
 
 </div>
