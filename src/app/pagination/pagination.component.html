@@ -1,7 +1,21 @@
 <button class="btn btn-small btn-info"
-(click) = "onPrevPage()">Previous Page</button>
+(click) = "onPrevPage()"
+[disabled]="page==1|| loading"
+>Previous Page</button>
 
 <button class="btn btn-small btn-info"
-(click) = "onNextPage()">
+(click) = "onNextPage()"
+[disabled]="page==pages+1||loading"
+>
 Next Page
 </button>
+<button class="btn btn-small btn-info"
+*ngFor= "let pageNumb of getPages()"
+(click)="onGoPage(pageNumb)"
+[ngClass]="{'active': pageNumb === page, 'disabled': loading }">
+
+{{pageNumb}}
+
+
+</button>
+

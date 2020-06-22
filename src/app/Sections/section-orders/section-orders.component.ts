@@ -50,10 +50,8 @@ export class SectionOrdersComponent implements OnInit {
   }
   goToPage(n: number): void {
     this.loading = true;
-    if ((n <= this.total) && ( n > 0)) {
-        this.page = n;
-        this.getOrders();
-    }
+    this.page = n;
+    this.getOrders();
   }
 
 

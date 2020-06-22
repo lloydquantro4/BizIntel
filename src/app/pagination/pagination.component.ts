@@ -35,5 +35,17 @@ export class PaginationComponent implements OnInit {
 
   }
 
+  getPages(): number [] {
+
+    const totalListed: number[] = [];
+    for (let i = 1; i < this.pages + 2 ; i++) {
+      totalListed.push(i);
+    }
+    console.log(totalListed.length);
+    return totalListed;
+
+  }
+
+
 
 }

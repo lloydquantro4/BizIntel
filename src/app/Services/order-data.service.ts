@@ -23,4 +23,6 @@ export class OrderDataService {
     return this.http.get<Response>('https://localhost:5001/api/order/' + pageNumber + '/' + pageSize);
   }
 
+  
+
 }
